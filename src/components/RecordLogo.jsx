@@ -20,7 +20,8 @@ const LOGOS = {
 export default function RecordLogo({ name }) {
   const logo = LOGOS[name];
   if (!logo) return null;
-  const mask = `url(${logo.src}) center / contain no-repeat`;
+  /* Quoted: production builds inline these SVGs as data: URIs, which contain quote characters. */
+  const mask = `url(${JSON.stringify(logo.src)}) center / contain no-repeat`;
   return (
     <span className="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0" aria-hidden="true">
       <span className="block w-5 h-5" style={{ backgroundColor: logo.color, WebkitMask: mask, mask }} />
