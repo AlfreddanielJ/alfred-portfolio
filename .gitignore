@@ -1,0 +1,7 @@
+node_modules
+dist
+.playwright-mcp
+
+# Secrets
+.env.local
+.env*.local
