@@ -82,6 +82,6 @@ const PUBLICATIONS = [
   ["chap", 2023, "Decentralized Edge Intelligence for Big Data Analytics-Assisted E-Learning", "In AI, IoT, and Blockchain Breakthroughs in E-Governance, IGI Global, 154–168", "Rajkumar, Newlin, Alfred Daniel, S. Jayashree", ""],
   ["chap", 2023, "Machine Vision in UAV Data Analytics for Precision Agriculture", "In Drone Data Analytics in Aerial Computing, Springer Nature Singapore, 145–162", "Velusamy, Parthasarathy, Santhosh Rajendran, Alfred Daniel John William", ""],
   ["chap", 2024, "Revolutionizing Medical Aid in Outer Space: A Blockchain-enabled Drone Delivery System", "In Cyber Space and Outer Space Security, River Publishers, 151–169", "Daniel, J. A., Ahmad, A., Vignesh, C. C., Rajkumar, M. N.", ""]
-];
+].sort(([, yearA], [, yearB]) => (yearB ?? 0) - (yearA ?? 0));
 
 export default PUBLICATIONS;

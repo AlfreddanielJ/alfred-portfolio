@@ -15,7 +15,11 @@ const BOOK_PUBLISHER = { "Fundamental of Intelligent Vehicular Network": "Elsevi
 const scholar = (t) => `https://scholar.google.com/scholar?q=${encodeURIComponent(`"${t}"`)}`;
 
 /* Patents grouped by status: the two lists are different things (granted rights vs. filed applications). */
-const PATENT_ITEMS = PATENTS.map((p, i) => ({ p, m: PATENT_META[i] }));
+const PATENT_ITEMS = PATENTS.map((p) => {
+  const m = PATENT_META.find(({ number }) => p.venue.includes(number));
+  if (!m) throw new Error(`Missing patent metadata for ${p.title}`);
+  return { p, m };
+});
 const GRANTED = PATENT_ITEMS.filter((x) => x.m.granted);
 const APPLICATIONS = PATENT_ITEMS.filter((x) => !x.m.granted);
 
