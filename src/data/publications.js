@@ -3,6 +3,7 @@
    kinds: sci = SCIE journal, idx = WoS/Scopus journal, oth = other journal,
           conf = conference, pat = patent, book = book, chap = book chapter */
 const PUBLICATIONS = [
+  ["sci", 2027, "Hardware-aware deep learning for multi-stage diabetic retinopathy screening on edge devices", "Biomed Signal Process Control 129, 111406", "Shijida Shain, Alfred Daniel J", "https://doi.org/10.1016/j.bspc.2026.111406"],
   ["sci", 2026, "Deploying YOLOv8m and Deep Q-Network for Intelligent Prediction of Pests and Soil-Borne Illness in Sugarcane Fields", "Int J Comput Intell Syst 19, 3", "Abinaya, M., Daniel, J.A.", "https://doi.org/10.1007/s44196-025-01050-9"],
   ["sci", 2025, "Autonomous vehicles decision-making enhancement using self-determination theory and mixed-precision neural networks", "Multimedia Tools and Applications 84, 35263–35286", "Ali, M.H., Jaber, M.M., Alfred Daniel, J. et al.", "https://doi.org/10.1007/s11042-023-14375-4"],
   ["sci", 2024, "Editorial: Influence of race, social justice, and health equity in physically impaired child and adolescent psychiatry", "Journal of Psychiatric Research 180, 273", "Montenegro-Marin CE, Daniel JA, Han G.", "https://doi.org/10.1016/j.jpsychires.2024.10.023"],
