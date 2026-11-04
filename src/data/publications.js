@@ -76,7 +76,7 @@ const PUBLICATIONS = [
   ["pat", 2019, "System for IoT Based Municipal Water Delivery, Water Contamination Monitor with Auto Cutoff Kit", "Indian patent application 201941014773, published 17 May 2019", "", ""],
   ["pat", 2019, "Starting and Security System for An Automotive Vehicle Using IoT Based Fingerprint Recognition", "Indian patent application 201941014769, published 17 May 2019", "", ""],
 
-  ["book", null, "Fundamental of Intelligent Vehicular Network", "Morgan Hoffman (Elsevier)", "Anand Paul, Naveen Chilamkurti, Alfred Daniel, Seungmin Rho", ""],
+  ["book", 2017, "Fundamental of Intelligent Vehicular Network", "Morgan Hoffman (Elsevier)", "Anand Paul, Naveen Chilamkurti, Alfred Daniel, Seungmin Rho", ""],
   ["book", null, "The Convergence of Self-Sustaining Systems with AI and IoT", "IGI Global", "Roopa Chandrika Rajappan, N.S. Gowri Ganesh, J. Alfred Daniel, R. Santhosh", ""],
 
   ["chap", 2026, "Data-Driven Strategies for Achieving Sustainable Development Goal Targets in Poverty Reduction", "In The Emerald Handbook of Digital Transformation, Environmental Sustainability and Wellbeing in the Global South, Emerald Group Publishing, 341", "Selvam La, M Arun Kumar, J Alfred Daniel, Boris Tomaš", "https://www.emerald.com/books/edited-volume/21610/chapter-abstract/116542858/Data-Driven-Strategies-for-Achieving-Sustainable?redirectedFrom=fulltext"],
