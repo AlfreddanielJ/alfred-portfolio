@@ -79,11 +79,11 @@ export const AWARDS = [
 ];
 
 export const RESEARCH_INTERESTS = [
-  "Artificial Intelligence (AI) & Machine Learning (ML)",
-  "Extended Reality (XR)",
-  "Intelligent Transportation System (ITS)",
-  "Autonomous Vehicle",
-  "IoT (Internet of Things)",
+  "Artificial Intelligence",
+  "Intelligent Transportation Systems",
+  "Vehicular Networks",
+  "Internet of Things",
+  "Immersive Technologies (AR/VR/XR)",
 ];
 
 export const PATENT_META = [
