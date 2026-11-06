@@ -35,13 +35,14 @@ export const LINKS = {
   maps: "https://www.google.com/maps/search/?api=1&query=Karpagam+Academy+of+Higher+Education+Coimbatore",
 };
 
-/* Single source for the Scholarly Records links (footer and About page). */
-export const SCHOLARLY_RECORDS = [
+/* Single source for the profile links (About, Credentials, Contact and the footer). */
+export const PROFILES = [
   { label: "ORCID Record", detail: IDS.orcid, href: LINKS.orcid },
   { label: "Google Scholar", detail: "Public profile", href: LINKS.scholar },
   { label: "Scopus Author ID", detail: IDS.scopus, href: LINKS.scopus },
   { label: "Web of Science", detail: IDS.wos, href: LINKS.wos },
   { label: "ResearchGate Profile", detail: "Public profile", href: LINKS.researchgate },
+  { label: "LinkedIn", detail: "Professional network", href: LINKS.linkedin },
 ];
 
 export const EDUCATION = [
@@ -78,11 +79,11 @@ export const AWARDS = [
 ];
 
 export const RESEARCH_INTERESTS = [
-  "Vehicular networks",
-  "Intelligent Transportation Systems (ITS)",
-  "Cooperative Cognitive Intelligence",
-  "Augmented Reality (AR)",
-  "Virtual Reality (VR)",
+  "Artificial Intelligence (AI) & Machine Learning (ML)",
+  "Extended Reality (XR)",
+  "Intelligent Transportation System (ITS)",
+  "Autonomous Vehicle",
+  "IoT (Internet of Things)",
 ];
 
 export const PATENT_META = [

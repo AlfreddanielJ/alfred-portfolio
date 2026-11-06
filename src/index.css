@@ -14,6 +14,12 @@
 
 ::-webkit-scrollbar { display: none; }
 
+/* Multi-line descriptive text is justified from tablet width up. On phones the column is too narrow:
+   justified lines get wide word gaps, so it stays left-aligned there. Not for citations or short labels. */
+@media (min-width: 640px) {
+  .justify-prose { text-align: justify; hyphens: auto; }
+}
+
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";
   font-weight: normal;

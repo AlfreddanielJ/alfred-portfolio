@@ -4,6 +4,7 @@ import { PATENTS, BOOKS, CHAPTERS } from "../lib/pubs.js";
 import { PATENT_META } from "../lib/profile.js";
 
 const CHAPTER_META = {
+  "Data-Driven Strategies": { book: "The Emerald Handbook of Digital Transformation, Environmental Sustainability and Wellbeing in the Global South", publisher: "Emerald Group Publishing", pages: "pp. 342–356", year: 2026 },
   "Fuzzy-Based": { book: "Cloud IoT Systems for Smart Agricultural Engineering", publisher: "Chapman & Hall / CRC", pages: "pp. 147–162", year: 2022 },
   "Decentralized Edge": { book: "AI, IoT, and Blockchain Breakthroughs in E-Governance", publisher: "IGI Global", pages: "pp. 154–168", year: 2023 },
   "Machine Vision": { book: "Drone Data Analytics in Aerial Computing", publisher: "Springer Nature Singapore", pages: "pp. 145–162", year: 2023 },
@@ -64,7 +65,7 @@ export default function PatentsBooks() {
               Intellectual Property &amp; Scholarly Books
             </span>
             <h1 className="font-headline-lg text-headline-lg text-white tracking-tight mb-space-xs">Patents &amp; Authored Books</h1>
-            <p className="font-body-lg text-body-lg text-white/80 leading-relaxed">
+            <p className="justify-prose font-body-lg text-body-lg text-white/80 leading-relaxed">
               Patents and patent applications, books and book chapters, spanning vehicular networks, IoT and intelligent systems.
             </p>
           </div>

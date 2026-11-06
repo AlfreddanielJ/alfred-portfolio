@@ -193,7 +193,7 @@ export default function Publications() {
                 <span className="px-space-sm py-[2px] bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge uppercase rounded">ORCID: {IDS.orcid}</span>
               </div>
               <h1 className="font-headline-lg text-headline-lg text-white tracking-tight">Research Publications &amp; Archival Papers</h1>
-              <p className="font-body-lg text-body-lg text-white/80 mt-space-xs leading-relaxed">
+              <p className="justify-prose font-body-lg text-body-lg text-white/80 mt-space-xs leading-relaxed">
                 Journal articles and conference papers on vehicular networks, intelligent transportation, autonomous vehicles, IoT, machine learning and immersive reality.
               </p>
             </div>

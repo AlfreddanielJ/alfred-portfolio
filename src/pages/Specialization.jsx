@@ -8,15 +8,6 @@ const find = (frag) => PUBS.find((p) => p.title.toLowerCase().includes(frag.toLo
 const pick = (...frags) => frags.map(find).filter(Boolean);
 const cite = (p) => `${p.venue}${p.year ? `, ${p.year}` : ""}`;
 
-const SIX_AREAS = [
-  "Artificial Intelligence (AI) & Machine Learning (ML)",
-  "Extended Reality (XR)",
-  "Augmented Reality (AR) & Virtual Reality (VR)",
-  "Intelligent Transportation System (ITS)",
-  "Autonomous Vehicle",
-  "IoT (Internet of Things)",
-];
-
 function Pillar({ id, n, tag, title, intro, children, aside, flip }) {
   return (
     <section className="relative bg-surface-container-lowest rounded-xl p-space-lg sm:p-space-xl shadow-md transition-all hover:shadow-xl" id={id}>
@@ -24,7 +15,7 @@ function Pillar({ id, n, tag, title, intro, children, aside, flip }) {
         <div className={`${aside ? "lg:col-span-7" : "lg:col-span-12"} space-y-space-md ${flip ? "order-2 lg:order-1" : ""}`}>
           <span className="block font-label-md text-label-md text-on-surface-variant">{tag}</span>
           <h2 className="font-headline-lg text-headline-lg text-on-surface">{title}</h2>
-          <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{intro}</p>
+          <p className="justify-prose font-body-md text-body-md text-on-surface-variant leading-relaxed">{intro}</p>
           {children}
         </div>
         {aside && <div className={`lg:col-span-5 flex flex-col gap-space-md ${flip ? "order-1 lg:order-2" : ""}`}>{aside}</div>}
@@ -90,17 +81,17 @@ export default function Specialization() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-end">
             <div className="lg:col-span-8 space-y-space-sm">
               <div className="inline-flex items-center gap-space-xs px-space-sm py-[3px] bg-white/10 text-white font-label-badge text-label-badge rounded uppercase tracking-wider">
-                Disciplines • Six Areas
+                Disciplines • Five Areas
               </div>
               <h1 className="font-headline-lg text-headline-lg text-white tracking-tight">Areas of Specialization &amp; Research</h1>
-              <p className="font-body-lg text-body-lg text-white/80 max-w-3xl leading-relaxed">
+              <p className="justify-prose font-body-lg text-body-lg text-white/80 max-w-3xl leading-relaxed">
                 Research spanning vehicular networks, intelligent transportation, autonomous vehicles, IoT, AI and machine learning, and extended reality. Each area below is backed by publications from the record.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-space-xs p-space-md bg-white/10 border border-white/15 rounded-xl">
               <span className="font-label-badge text-label-badge uppercase tracking-wider text-white/70">Listed Specializations</span>
               <ul className="flex flex-wrap gap-space-xs text-label-md font-label-md text-on-surface">
-                {SIX_AREAS.map((a) => (
+                {RESEARCH_INTERESTS.map((a) => (
                   <li key={a} className="px-space-sm py-1 bg-surface-container-lowest rounded shadow-sm">{a}</li>
                 ))}
               </ul>
@@ -266,7 +257,7 @@ export default function Specialization() {
             <div className="lg:col-span-8 space-y-space-md">
               <div className="inline-flex items-center gap-space-xs px-space-sm py-[2px] bg-surface-container-lowest text-primary rounded font-label-badge text-label-badge uppercase tracking-wider">Research Interests</div>
               <h2 className="font-headline-lg text-headline-lg text-surface-bright tracking-tight">Where the Work Is Heading</h2>
-              <p className="font-body-lg text-body-lg text-inverse-on-surface max-w-2xl leading-relaxed">
+              <p className="justify-prose font-body-lg text-body-lg text-inverse-on-surface max-w-2xl leading-relaxed">
                 The research interests Dr. Daniel lists on his profile. Get in touch about collaboration, student projects or reviewing.
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-space-sm">

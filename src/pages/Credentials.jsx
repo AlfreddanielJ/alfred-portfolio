@@ -1,7 +1,7 @@
 import { Icon, Breadcrumb, Ext } from "../components/ui.jsx";
 import RecordLogo from "../components/RecordLogo.jsx";
 import Section, { card } from "../components/Section.jsx";
-import { SCHOLARLY_RECORDS, EDUCATION, TRAINING, RECOGNITION, REVIEWER_FOR, AWARDS } from "../lib/profile.js";
+import { PROFILES, EDUCATION, TRAINING, RECOGNITION, REVIEWER_FOR, AWARDS } from "../lib/profile.js";
 
 const STANDING = [
   { figure: "SMIEEE", tag: "Professional standing", title: "Senior Member, IEEE", text: "Senior Member of the Institute of Electrical and Electronics Engineers, with an active profile on IEEE Collabratec." },
@@ -21,7 +21,7 @@ export default function Credentials() {
               <span className="font-label-badge text-label-badge uppercase tracking-wider">Credentials &amp; Recognition</span>
             </div>
             <h1 className="font-headline-lg text-headline-lg text-white tracking-tight mb-space-sm">Academic Credentials &amp; Professional Distinctions</h1>
-            <p className="font-body-lg text-body-lg text-white/80 leading-relaxed">
+            <p className="justify-prose font-body-lg text-body-lg text-white/80 leading-relaxed">
               Qualifications, awards, peer-review service and research training, drawn from Dr. Daniel's Research Credentials record.
             </p>
           </div>
@@ -29,9 +29,9 @@ export default function Credentials() {
       </section>
 
       {/* 1. Identifiers */}
-      <Section id="identifiers" title="Scholarly Identifiers" text="Public records where his publications and citations can be verified.">
+      <Section id="identifiers" title="Profiles & Identifiers" text="Public profiles and records for his work and publications.">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
-          {SCHOLARLY_RECORDS.map((r) => (
+          {PROFILES.map((r) => (
             <li key={r.label}>
               <Ext href={r.href} className={`group flex items-center gap-space-md p-space-md h-full ${card()}`}>
                 <RecordLogo name={r.label} />

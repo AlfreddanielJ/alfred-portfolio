@@ -26,7 +26,7 @@ export default function Header({ route }) {
             Dr. J. Alfred Daniel
           </span>
           <span className="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">
-            Assistant Professor • Computer Science &amp; Engineering
+            Assistant Professor &amp; Researcher
           </span>
         </a>
 

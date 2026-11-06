@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Icon, Breadcrumb, Ext } from "../components/ui.jsx";
 import RecordLogo from "../components/RecordLogo.jsx";
 import Section, { card } from "../components/Section.jsx";
-import { PROFILE, LINKS, SCHOLARLY_RECORDS } from "../lib/profile.js";
-
-/* Professional and scholarly profiles, each shown with its brand logo. */
-const ONLINE = [{ label: "LinkedIn", detail: "Professional network", href: LINKS.linkedin }, ...SCHOLARLY_RECORDS];
+import { PROFILE, LINKS, PROFILES } from "../lib/profile.js";
 
 /* All three addresses from his profile page, each with its own Copy button. */
 const EMAILS = [PROFILE.email, ...PROFILE.emailAlt];
@@ -75,7 +72,7 @@ export default function Contact() {
           <Breadcrumb current="Contact" variant="slash" light />
           <div className="max-w-3xl">
             <h1 className="font-headline-lg text-headline-lg text-white mb-space-sm tracking-tight">Contact Dr. Daniel</h1>
-            <p className="font-body-lg text-body-lg text-white/80 leading-relaxed">
+            <p className="justify-prose font-body-lg text-body-lg text-white/80 leading-relaxed">
               For research collaboration, student projects or reviewing requests.
             </p>
             <div className="flex flex-wrap gap-space-sm mt-space-lg">
@@ -95,7 +92,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-gutter-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
           <div className={`lg:col-span-7 p-space-lg sm:p-space-xl ${card()}`}>
             <h2 className="font-headline-lg text-headline-lg text-on-surface tracking-tight">Send a message</h2>
-            <p className="font-body-md text-body-md text-on-surface-variant mt-space-xs mb-space-xl">
+            <p className="justify-prose font-body-md text-body-md text-on-surface-variant mt-space-xs mb-space-xl">
               Your message goes straight to Dr. Daniel's inbox, and he can reply to you directly.
             </p>
             <form className="flex flex-col gap-space-lg" onSubmit={submit} aria-busy={status === "sending"}>
@@ -189,7 +186,7 @@ export default function Contact() {
       {/* Profiles with logos */}
       <Section id="online" tone="soft" title="Find Dr. Daniel online" text="Professional and scholarly profiles.">
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
-          {ONLINE.map((r) => (
+          {PROFILES.map((r) => (
             <li key={r.label}>
               <Ext href={r.href} className={`group flex items-center gap-space-md p-space-md h-full ${card()}`}>
                 <RecordLogo name={r.label} />
